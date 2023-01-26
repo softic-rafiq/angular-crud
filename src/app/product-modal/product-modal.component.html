@@ -1,0 +1,74 @@
+<div class="dialog-wrapper">
+  <h1 mat-dialog-title class="modal-title">{{ modalContent.title }}</h1>
+  <div mat-dialog-content>
+    <form action="" [formGroup]="productForm">
+      <mat-form-field appearance="outline" class="input-field">
+        <mat-label>Product Name</mat-label>
+        <input
+          matInput
+          placeholder="Enter product name"
+          formControlName="productName"
+        />
+      </mat-form-field>
+
+      <mat-form-field appearance="outline">
+        <mat-label>Select Category</mat-label>
+        <mat-select formControlName="category">
+          <mat-option value="Apple">Apple</mat-option>
+          <mat-option value="Mango">Mango</mat-option>
+          <mat-option value="Banana">Banana</mat-option>
+        </mat-select>
+      </mat-form-field>
+
+      <mat-form-field appearance="outline">
+        <mat-label>Price</mat-label>
+        <input
+          matInput
+          placeholder="Enter product price"
+          formControlName="price"
+        />
+      </mat-form-field>
+
+      <mat-form-field appearance="outline">
+        <mat-label>Comment</mat-label>
+        <input
+          formControlName="comment"
+          matInput
+          placeholder="Enter any comment"
+        />
+      </mat-form-field>
+
+      <mat-form-field appearance="outline">
+        <mat-label>Choose a date</mat-label>
+        <input
+          matInput
+          [matDatepicker]="picker"
+          placeholder="MM/DD/YYYY"
+          formControlName="date"
+        />
+        <mat-datepicker-toggle
+          matIconSuffix
+          [for]="picker"
+        ></mat-datepicker-toggle>
+        <mat-datepicker #picker></mat-datepicker>
+      </mat-form-field>
+
+      <h3>Product Freshness</h3>
+      <mat-radio-group
+        aria-label="Select an option"
+        formControlName="freshness"
+      >
+        <mat-radio-button *ngFor="let item of freshness" [value]="item">{{
+          item
+        }}</mat-radio-button>
+      </mat-radio-group>
+    </form>
+  </div>
+  <div mat-dialog-actions align="end" color="accent">
+    <!-- <button mat-raied-button mat-dialog-close>Close</button> -->
+    <button mat-raised-button color="primary" (click)="addProduct()">
+      {{ actionBtn }}
+    </button>
+    <button mat-raised-button mat-dialog-close color="warn">Close</button>
+  </div>
+</div>

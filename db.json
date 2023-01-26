@@ -1,0 +1,62 @@
+{
+  "products": [
+    {
+      "productName": "China Apple",
+      "category": "Apple",
+      "price": "1008",
+      "freshness": "Brand New",
+      "date": "2023-01-25T18:00:00.000Z",
+      "comment": "This china apple updated",
+      "id": 1
+    },
+    {
+      "productName": "New Product updated",
+      "category": "Mango",
+      "price": "34",
+      "freshness": "Second Hand",
+      "date": "2023-01-25T18:00:00.000Z",
+      "id": 2
+    },
+    {
+      "productName": "FGgfg",
+      "category": "Banana",
+      "price": "455",
+      "freshness": "Brand New",
+      "date": "2023-01-24T18:00:00.000Z",
+      "id": 3
+    },
+    {
+      "productName": "New Mango",
+      "category": "Mango",
+      "price": "20",
+      "freshness": "Brand New",
+      "date": "2023-01-25T18:00:00.000Z",
+      "comment": "",
+      "id": 4
+    },
+    {
+      "productName": "Thai Banana",
+      "category": "Banana",
+      "price": "24",
+      "freshness": "Brand New",
+      "date": "2023-01-25T18:00:00.000Z",
+      "comment": "This is banana",
+      "id": 5
+    },
+    {
+      "productName": "gfgf",
+      "category": "Apple",
+      "price": "44",
+      "freshness": "Fabrished Product",
+      "date": "2023-01-24T18:00:00.000Z",
+      "comment": "fgfgfg fg fg",
+      "id": 6
+    }
+  ],
+  "product": {
+    "id": 1,
+    "body": "some comment",
+    "postId": 1
+  },
+  "cart": []
+}

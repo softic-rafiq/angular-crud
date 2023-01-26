@@ -1,0 +1,14 @@
+mat-form-field {
+  width: 100%;
+}
+/* .modal-title {
+} */
+.input-field {
+  margin-top: 10px;
+}
+.dialog-wrapper {
+  width: 600px;
+}
+.mat-mdc-radio-button ~ .mat-mdc-radio-button {
+  margin-left: 16px;
+}
